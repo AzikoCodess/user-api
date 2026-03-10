@@ -84,6 +84,6 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsdoc(swaggerOptions)
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log(`Server ishlamoqda: user-api-production-291d.up.railway.app`);
 });
