@@ -84,6 +84,6 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsdoc(swaggerOptions)
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server ishlamoqda: http://${process.env.IP}:${process.env.PORT}`);
+app.listen(process.env.PORT || 5000, () => {
+    console.log(`Server ishlamoqda: http://${process.env.IP}:${process.env.PORT || 5000}`);
 });
