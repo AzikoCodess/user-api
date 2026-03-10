@@ -75,7 +75,7 @@ const swaggerOptions = {
             description: "User API"
         },
         servers: [
-            { url: `user-api-production-291d.up.railway.app` }
+            { url: `https://user-api-production-291d.up.railway.app` }
         ]
     },
     apis: ["./routes/*.js"]
