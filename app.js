@@ -75,7 +75,7 @@ const swaggerOptions = {
             description: "User API"
         },
         servers: [
-            { url: `http://${process.env.IP}:${process.env.PORT}` }
+            { url: `user-api-production-291d.up.railway.app` }
         ]
     },
     apis: ["./routes/*.js"]
@@ -85,5 +85,5 @@ const swaggerDocs = swaggerJsdoc(swaggerOptions)
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
 app.listen(process.env.PORT || 5000, () => {
-    console.log(`Server ishlamoqda: http://${process.env.IP}:${process.env.PORT || 5000}`);
+    console.log(`Server ishlamoqda: user-api-production-291d.up.railway.app`);
 });
